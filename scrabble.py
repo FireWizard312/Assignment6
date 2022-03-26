@@ -169,7 +169,7 @@ def play_game(word_list):
     while times_run < number_of_hands:
         hand = deal_hand(HAND_SIZE)
         display_hand(hand)
-        substitution = input("Would you like to substitute a letter?")
+        substitution = input("Would you like to substitute a letter? Input yes or no")
         if substitution.lower() == "yes":
             letter = input("Which letter would you like to replace:")
             hand = substitute_hand(hand, letter)
